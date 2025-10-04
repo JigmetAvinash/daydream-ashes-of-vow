@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://igxbtkfx1uc4"
+path="res://.godot/imported/Soft Piano Music.mp3-5e1e29ba7df91ea2ce38dc7f2e1f7c21.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundFX/Music/Soft Piano Music.mp3"
+dest_files=["res://.godot/imported/Soft Piano Music.mp3-5e1e29ba7df91ea2ce38dc7f2e1f7c21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

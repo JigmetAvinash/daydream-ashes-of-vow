@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1jx24la4usjk"
+path="res://.godot/imported/Epic Cinematic Music with Choir and Orchestra.mp3-837ef78e1ba7d3ee47838629e8f31025.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundFX/Music/Epic Cinematic Music with Choir and Orchestra.mp3"
+dest_files=["res://.godot/imported/Epic Cinematic Music with Choir and Orchestra.mp3-837ef78e1ba7d3ee47838629e8f31025.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
