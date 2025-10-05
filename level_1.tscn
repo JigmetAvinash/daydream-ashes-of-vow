@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://burjf05yo5t54"]
+[gd_scene load_steps=12 format=3 uid="uid://burjf05yo5t54"]
 
 [ext_resource type="PackedScene" uid="uid://dywxt1bsiyva6" path="res://Wanderer.tscn" id="1_3hls8"]
 [ext_resource type="Texture2D" uid="uid://c2bfyvcstrbmh" path="res://Assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_hn12h"]
 [ext_resource type="Texture2D" uid="uid://djwblixfblcv7" path="res://Assets/oak_woods_v1.0/decorations/grass_3.png" id="3_ihfcg"]
 [ext_resource type="PackedScene" uid="uid://pmm7uqnhxo71" path="res://coin.tscn" id="4_ihfcg"]
+[ext_resource type="PackedScene" path="res://HUD.tscn" id="5_rka8t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rka8t"]
 texture = ExtResource("2_hn12h")
@@ -437,13 +438,19 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rka8t")
 sources/1 = SubResource("TileSetAtlasSource_5hph3")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ihfcg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rka8t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5hph3"]
+
 [node name="Level 1" type="Node2D"]
 position = Vector2(2, -1)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_3hls8")]
-position = Vector2(90, 147)
+[node name="Player" parent="." groups=["Player", "player"] instance=ExtResource("1_3hls8")]
+position = Vector2(89, 149)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(5, 5)
 position_smoothing_enabled = true
 
@@ -457,8 +464,61 @@ layer_0/tile_data = PackedInt32Array(131070, 65536, 0, 131071, 65536, 0, 65536, 
 [node name="Coin2" parent="." instance=ExtResource("4_ihfcg")]
 position = Vector2(228, 162)
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin2"]
+shape = SubResource("CircleShape2D_ihfcg")
+
 [node name="Coin" parent="." instance=ExtResource("4_ihfcg")]
 position = Vector2(158, 147)
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin"]
+shape = SubResource("CircleShape2D_rka8t")
+
 [node name="Coin3" parent="." instance=ExtResource("4_ihfcg")]
 position = Vector2(278, 161)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin3"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin4" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(474, 158)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin4"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin5" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(669, 139)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin5"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin6" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(771, 93)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin6"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin7" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(986, 90)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin7"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin8" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(1027, 25)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin8"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin9" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(1262, 92)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin9"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="Coin10" parent="." instance=ExtResource("4_ihfcg")]
+position = Vector2(1605, 90)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Coin10"]
+shape = SubResource("CircleShape2D_5hph3")
+
+[node name="HUD" parent="." instance=ExtResource("5_rka8t")]

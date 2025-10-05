@@ -15,6 +15,15 @@ run/main_scene="res://level_1.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CoinGameState="*res://coinGameState.gd"
+
+[global_group]
+
+Player=""
+player=""
+
 [input]
 
 move_right={
