@@ -22,6 +22,8 @@ As the story unfolds, the wanderer must confront the truth behind his quest and 
 
 ---
 
+
+
 ## 🌑 Story Outline (5 Levels)
 
 | Level | Name | Theme | Sacrifice |
@@ -38,31 +40,30 @@ As the story unfolds, the wanderer must confront the truth behind his quest and 
 - **Genre:** Action / Platformer / Narrative Choice  
 - **Objective:** Progress through levels, fight enemies, uncover memories, and make the final moral decision.  
 - **Key Features:**
-  - Cinematic storytelling  
-  - Companion-based progression  
-  - Two different endings based on your choice  
+  - Cinematic storytelling  (through deep thinking)
+  - Companion-based progression  (through fights)
+  - Two different endings based on your choice  (as per what the game is hardcoded)
 
 ---
 
 ## 🧩 Controls
 | Action | Key |
 |:--|:--|
-| Move | A / D or ← / → |
+| Move | A / D ]
 | Jump | Space |
-| Attack | Left Mouse / Ctrl |
-| Interact | E |
-| Pause | Esc |
+
 
 ---
 
-## 🎵 Audio & Music
+## 🎵 Audio & Music & Other Assets
 Atmospheric music and ambient sounds from:  
 - [OpenGameArt.org](https://opengameart.org)  
 - [Freesound.org](https://freesound.org)  
 - [Mixkit.co](https://mixkit.co)  
 - [Pixabay Sounds](https://pixabay.com/sound-effects/)
-
-_Music direction and sound integration by Avinash._  
+- [Itch.IO assets](https://itch.io)
+- Photograph in the main menu taken from Freepik
+- Assets are also taken from GoDot Menu
 
 ---
 
@@ -76,4 +77,7 @@ _Music direction and sound integration by Avinash._
    GoDot -> Import -> *Locate where you cloned* -> Import -> Play
 enjoy :>
 GPT-5 Was used for the template making of this Readme.
+
+## Difficulties 
+- It was the team's first time making a full fledged game, all of us were complete beginners with little to no knowledge of game developments. We faced high difficulties in the managing of git. on what even is godot, etc.
 
