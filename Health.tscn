@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bp6j7hpxp8aks"]
+
+[ext_resource type="Texture2D" uid="uid://b04162tqgauoy" path="res://Changing Healthbar with Changing Heart.png" id="1_halrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k7lb"]
+atlas = ExtResource("1_halrj")
+region = Rect2(0, 0, 64, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcsrs"]
+atlas = ExtResource("1_halrj")
+region = Rect2(0, 16, 64, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtxv0"]
+atlas = ExtResource("1_halrj")
+region = Rect2(0, 32, 64, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8t6ex"]
+atlas = ExtResource("1_halrj")
+region = Rect2(0, 48, 64, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ehraw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k7lb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcsrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtxv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8t6ex")
+}],
+"loop": true,
+"name": &"Health",
+"speed": 5.0
+}]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ehraw")
+animation = &"Health"

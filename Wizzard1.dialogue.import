@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bipq44oo7nli6"
+path="res://.godot/imported/Wizzard1.dialogue-67055c25ee8fd99db3bc39d2e1bcfed2.tres"
+
+[deps]
+
+source_file="res://Wizzard1.dialogue"
+dest_files=["res://.godot/imported/Wizzard1.dialogue-67055c25ee8fd99db3bc39d2e1bcfed2.tres"]
+
+[params]
+
+defaults=true
