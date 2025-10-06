@@ -1,0 +1,139 @@
+[gd_scene load_steps=18 format=3 uid="uid://cuujcns8514fv"]
+
+[ext_resource type="FontFile" uid="uid://dvf4rg2bvauel" path="res://Assets/Text/PixelifySans-VariableFont_wght.ttf" id="1_7jlr6"]
+[ext_resource type="Texture2D" uid="uid://dicbaviwqjccb" path="res://Assets/FreeHorrorUi.png" id="1_enwfr"]
+[ext_resource type="Script" uid="uid://c8hv1aw5lnf4f" path="res://mainmenuscriptbhai.gd" id="1_m82ya"]
+[ext_resource type="Texture2D" uid="uid://by6w1hcmbmnun" path="res://Assets/goodbackgroundvro.jpg" id="1_um2lw"]
+
+[sub_resource type="FontVariation" id="FontVariation_pbtgn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_um2lw"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(5.4206657, 136.25, 52.079334, 18.251144)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m82ya"]
+texture = SubResource("AtlasTexture_um2lw")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ftuh"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(68.044815, 137.4404, 55.40741, 16.148148)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kki6w"]
+texture = SubResource("AtlasTexture_3ftuh")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_enwfr"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(68.0003, 135.18567, 56.148148, 18.222214)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_um2lw"]
+texture = SubResource("AtlasTexture_enwfr")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juxkc"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(5, 201.75, 54, 15.5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dg1fb"]
+texture = SubResource("AtlasTexture_juxkc")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dg1fb"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(68.39074, 200.13493, 54.962967, 17.037033)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ftuh"]
+texture = SubResource("AtlasTexture_dg1fb")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m82ya"]
+atlas = ExtResource("1_enwfr")
+region = Rect2(68.32141, 201.75426, 54.96296, 15.555557)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_juxkc"]
+texture = SubResource("AtlasTexture_m82ya")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m82ya")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(1.66, 1.66)
+texture = ExtResource("1_um2lw")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -181.49997
+offset_top = -132.49998
+offset_right = 181.5
+offset_bottom = 10.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0433849, 0.7780044)
+theme_override_fonts/font = SubResource("FontVariation_pbtgn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_m82ya")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_kki6w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_um2lw")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -181.49997
+offset_top = 8.5
+offset_right = 181.5
+offset_bottom = 151.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0433849, 0.7780044)
+theme_override_fonts/font = SubResource("FontVariation_pbtgn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_dg1fb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3ftuh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_juxkc")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -229.0
+offset_top = 74.0
+offset_right = 231.0
+offset_bottom = 170.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_7jlr6")
+theme_override_font_sizes/font_size = 200
+text = "Ashes Of Vow"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -74.0
+offset_top = -158.0
+offset_right = 63.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_7jlr6")
+theme_override_font_sizes/font_size = 38
+text = "Made by Yugam, Avinash and Aadhavan 
+while Daydreaming at IITD"
+horizontal_alignment = 1

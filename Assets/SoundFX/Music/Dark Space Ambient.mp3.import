@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbmtrxlnutus5"
+path="res://.godot/imported/Dark Space Ambient.mp3-c9c3fbed5d7501946f80e1ff4199d04a.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundFX/Music/Dark Space Ambient.mp3"
+dest_files=["res://.godot/imported/Dark Space Ambient.mp3-c9c3fbed5d7501946f80e1ff4199d04a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

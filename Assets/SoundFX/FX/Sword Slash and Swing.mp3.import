@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c33fmjrr3ryio"
+path="res://.godot/imported/Sword Slash and Swing.mp3-b0af2bc67c76d041c034dffa65521737.mp3str"
+
+[deps]
+
+source_file="res://Assets/SoundFX/FX/Sword Slash and Swing.mp3"
+dest_files=["res://.godot/imported/Sword Slash and Swing.mp3-b0af2bc67c76d041c034dffa65521737.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
